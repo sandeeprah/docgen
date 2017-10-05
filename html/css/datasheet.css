@@ -1,5 +1,6 @@
   body {
     font-size: 10pt;
+    counter-reset: sno;
   }
 
   table.datasheet {
@@ -52,6 +53,17 @@
     display: inline-block;
     padding-left: 0.5em;
   }
+
+  span.sno::after {
+  counter-increment: sno;
+  content: counter(sno);
+
+ }
+
+ .shead{
+   font-size: 1.2em;
+   font-weight: bold;
+ }
 
   table.nested {
     width:100%;
