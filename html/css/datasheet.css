@@ -52,6 +52,7 @@
   span {
     display: inline-block;
     padding-left: 0.5em;
+    box-sizing: border-box;
   }
 
   span.sno::after {
